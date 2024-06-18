@@ -1,0 +1,221 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.unorder{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+    color: black;
+    align-items: center;
+    /* list-style: none; */
+    text-decoration: none;
+}
+.navbar{
+    font-family: "Poppins", sans-serif;
+    /* height: 1%; */
+    /* margin-left: 15%; */
+    /* margin-right: 15%; */
+    text-decoration: none;
+    height: 90px;
+    width:auto;
+    background-color: orange;
+} 
+.search_main{
+    border-bottom: 1px solid black;
+}
+.headline{
+    font-family: "Poppins", sans-serif;
+    color: rgb(227, 46, 215);
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 10px;
+}
+.searchbar{
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    height: 2.5%;
+    padding: 1%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.ban{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url("https://img.freepik.com/free-photo/glamorous-girl-with-shopping-bags-studio_23-2147825038.jpg?w=1060&t=st=1709276225~exp=1709276825~hmac=95586bb7b329038096b0a96bd82141fc1149391958433e2212961d1702fd3c96");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.bantext{
+    width: 50%;
+    padding: 4% 5%;
+    font-family: "Poppins", sans-serif;
+    line-height: 2em;
+    font-size:3em;
+}
+.butn{
+    background-color:rgba(219, 43, 164, 0.925);
+    padding: 13px;
+    border-radius:3px ;
+    border: none;
+    color: azure;
+}
+.butn:hover{
+    box-shadow: 1px 1px 6px black;
+}
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* padding: 10px; */
+    transition: transform 0.3s;
+    height: 500px;
+    width: 300px;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns per row */
+    gap: 20px;
+    padding: 20px;
+    height:auto;
+}
+
+.product-item img {
+    max-width: 60%;
+    /* height: auto; */
+    margin-bottom: 10px;
+    /* height: -90px; */
+
+}
+
+.product-item h2 {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    color: #888;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: deeppink;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: darkmagenta;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.v{
+    font-size: 23px;
+    color: black;
+    margin-right: 40px;
+    
+}
+.box{
+    height: 40px;
+    width: 80px;
+    background-color:white;
+    font-size: larger;
+    color: red;
+    margin-right: 90px;
+    cursor: pointer;
+
+}
+
+/* src/e_comerce.css */
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    margin-left: 35%;
+    margin-top: 13%;
+    padding: 20px;
+    /* width: 100%; */
+    /* height: 100%; */
+    overflow: auto;
+    /* background-color: #888; */
+    /* background-color: rgb(0, 0, 0); */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+  }
+  
+  .modal-content {
+    background-color:lightgray;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .box1{
+    height: 30px;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 120px;
+
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet view */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr; /* 1 column for mobile view */
+    }
+}
+
