@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductItem from './ProductItem';
 
-function ProductList({ products }) {
+function ProductItem({ products }) {
   return (
     <div id="product-list" className="product-list">
       {products.map(product => (
@@ -11,4 +11,4 @@ function ProductList({ products }) {
   );
 }
 
-export default ProductList;
+export default ProductItem;
