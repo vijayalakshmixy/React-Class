@@ -12,8 +12,8 @@
     text-align: center;
     color: black;
     align-items: center;
-    /* list-style: none; */
-    text-decoration: none;
+    list-style: none;
+    /* text-decoration: none; */
 }
 .navbar{
     font-family: "Poppins", sans-serif;
@@ -21,16 +21,18 @@
     /* margin-left: 15%; */
     /* margin-right: 15%; */
     text-decoration: none;
+    /* position: static; */
     height: 90px;
     width:auto;
-    background-color: orange;
+    background-color:rgb(250, 170, 245);
 } 
-.search_main{
-    border-bottom: 1px solid black;
+.header-container{
+    background-color:rgb(240, 195, 237) ;
 }
+
 .headline{
     font-family: "Poppins", sans-serif;
-    color: rgb(227, 46, 215);
+    color: black;
     padding: 1%;
     display: flex;
     justify-content: space-between;
@@ -51,14 +53,14 @@ a{
     color: black;
 }
 .ban{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-right: 20px;
     background-image: url("https://img.freepik.com/free-photo/glamorous-girl-with-shopping-bags-studio_23-2147825038.jpg?w=1060&t=st=1709276225~exp=1709276825~hmac=95586bb7b329038096b0a96bd82141fc1149391958433e2212961d1702fd3c96");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 .bantext{
     width: 50%;
@@ -78,7 +80,7 @@ a{
     box-shadow: 1px 1px 6px black;
 }
 .product-item {
-    background-color: #fff;
+    background-color: rgb(242, 229, 231);
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
@@ -86,8 +88,10 @@ a{
     text-align: center;
     /* padding: 10px; */
     transition: transform 0.3s;
-    height: 500px;
+    height: 330px;
     width: 300px;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 .product-list {
     display: grid;
@@ -95,7 +99,10 @@ a{
     gap: 20px;
     padding: 20px;
     height:auto;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
+
 
 .product-item img {
     max-width: 60%;
@@ -109,6 +116,9 @@ a{
     font-size: 1.1em;
     margin: 10px 0;
     color: #333;
+}
+.product-card{
+  justify-content: center;
 }
 
 .product-item p {
@@ -144,12 +154,17 @@ a{
 .box{
     height: 40px;
     width: 80px;
-    background-color:white;
+    /* background-color:white; */
     font-size: larger;
-    color: red;
+    color:black;
     margin-right: 90px;
+    border: 2px solid black;
     cursor: pointer;
 
+}
+.cart-count{
+  font-size: 27px;
+  margin-right: 80px;
 }
 
 /* src/e_comerce.css */
@@ -162,41 +177,57 @@ a{
     z-index: 1;
     left: 0;
     top: 0;
-    margin-left: 35%;
-    margin-top: 13%;
-    padding: 20px;
-    /* width: 100%; */
-    /* height: 100%; */
-    overflow: auto;
+    margin-left: -20%;
+    margin-top: -10%;
+    /* padding: 70px; */
+    width: 140%;
+    height: 150%; 
+    /* overflow: auto; */
     /* background-color: #888; */
     /* background-color: rgb(0, 0, 0); */
     /* background-color: rgba(0, 0, 0, 0.4); */
   }
+  .sign{
+    height: 30px;
+    margin-top: 10px;
+  }
+  .login{
+    height: 24px;
+    margin-top:7px ;
+    width: 70px;
+  }
   
+   
   .modal-content {
-    background-color:lightgray;
+    background-color:rgb(247, 90, 90);
     margin: 15% auto;
-    padding: 20px;
+    padding: 70px;
     border: 1px solid #888;
-    width: 80%;
+    width: 100%;
     max-width: 400px;
+    max-height: 400px;
     position: relative;
     cursor: pointer;
-  }
+  } 
   
   .close {
-    color: #aaa;
+    color: black;
     float: right;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
+    margin-top: -48px;
+  } 
+  .l{
+    margin-top:-38px ;
   }
   
-  .close:hover,
+   .close:hover,
   .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
+   
   .box1{
     height: 30px;
     width: 90px;
@@ -204,6 +235,104 @@ a{
     margin-left: 120px;
 
   }
+
+  .carousel .slide img {
+    max-height: 350px; /* Adjust the height as needed */
+    object-fit: cover;
+    background-size: cover;
+  }
+  
+  .carousel .control-dots .dot {
+    background: #ccc;
+  }
+  
+  .carousel .control-dots .dot.selected {
+    background: #000;
+  }
+  
+  .carousel .control-arrow,
+  .carousel.carousel-slider .control-arrow {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel .control-arrow:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .product-detail {
+    text-align: center;
+    justify-content: center;
+    margin-left: 38%;
+    /* padding: 20px; */
+    background-color: rgb(242, 229, 231);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid black;
+    width: 330px;
+    /* height: 450px; */
+    color:black;
+    font-size: larger;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  .product-detail img {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-detail button {
+    background-color: deeppink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+  }
+
+  .product-detail button:hover {
+    background-color: darkmagenta;
+}
+
+
+
+  
+
+
+/* .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+ .product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-detail {
+  text-align: center;
+  padding: 20px;
+}
+
+.product-detail img {
+  width: 300px;
+  height: auto;
+} */
+
+  
+
+
+
   
 
 /* Responsive Design */
