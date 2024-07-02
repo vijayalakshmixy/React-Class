@@ -44,7 +44,7 @@ const Navbar = ({ setCategory }) => {
         <li><Link to="/" onClick={() => setCategory('tops')}>tops</Link></li>
         <li><Link to="/" onClick={() => setCategory('sunglasses')}>sunglasses</Link></li>
         <li><Link to="/" onClick={() => setCategory('laptops')}>laptops</Link></li>
-        // <li><Link to="/" onClick={() => setCategory('beauty')}>beauty</Link></li>
+        <li><Link to="/" onClick={() => setCategory('beauty')}>beauty</Link></li>
         {/* Add more categories as needed */}
       </ul>
     </nav>
