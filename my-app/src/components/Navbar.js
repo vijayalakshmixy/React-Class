@@ -35,7 +35,7 @@ const Navbar = ({ setCategory }) => {
       <ul className='unorder'>
         // <li><Link to="/">Home</Link></li>
          <li><Link to="/" onClick={() => setCategory('all')}>Home</Link></li>
-        <li><Link to="/" onClick={() => setCategory('electronics')}>Electronics</Link></li>
+        // <li><Link to="/" onClick={() => setCategory('electronics')}>Electronics</Link></li>
         <li><Link to="/" onClick={() => setCategory('groceries')}>Groceries</Link></li>
         <li><Link to="/" onClick={() => setCategory('smartphones')}>smartphones</Link></li>
         <li><Link to="/" onClick={() => setCategory('furniture')}>furniture</Link></li>
